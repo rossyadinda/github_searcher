@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencari Profil GitHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pencari Profil GitHub</h1>
+        
+        <!-- Form Input Username -->
+        <div class="search-box">
+            <input type="text" id="usernameInput" placeholder="Masukkan username GitHub...">
+            <button id="searchBtn">Cari</button>
+        </div>
+
+        <!-- Indikator Loading -->
+        <div id="loading" class="hidden">Memuat data...</div>
+
+        <!-- Pesan Error / User Tidak Ditemukan -->
+        <div id="errorMsg" class="hidden"></div>
+
+        <!-- Kartu Hasil Profil -->
+        <div id="profileCard" class="profile-card hidden">
+            <img id="avatar" src="" alt="Avatar Profil">
+            <h2 id="name"></h2>
+            <p id="username" class="username-tag"></p>
+            <p id="bio"></p>
+            <div class="stats">
+                <p>Repositori Publik: <span id="repoCount"></span></p>
+            </div>
+            <a id="profileLink" href="" target="_blank">Lihat Profil di GitHub</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
